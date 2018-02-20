@@ -1,0 +1,36 @@
+{
+    "name": "riesjart/laravel-database-helpers",
+    "description": "Laravel database helper functions",
+    "keywords": [
+        "connection",
+        "database",
+        "helper",
+        "helpers",
+        "illuminate",
+        "laravel",
+        "mysql",
+        "php",
+        "query"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard van Baarsen",
+            "email": "richardvanbaarsen@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/container": "5.6.*",
+        "illuminate/database": "5.6.*",
+        "symfony/var-dumper": "~4.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
