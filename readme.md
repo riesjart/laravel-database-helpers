@@ -1,6 +1,6 @@
 ## Version
 
-Current release: **v0.1.1**
+Current release: **v0.1.2**
 
 This repository uses [Semantic Versioning (SemVer) v2.0.0](http://semver.org/spec/v2.0.0.html).
 
