@@ -7,7 +7,7 @@ This repository uses [Semantic Versioning (SemVer) v2.0.0](http://semver.org/spe
 ## Requirements
 
 - PHP >= 7.1
-- Laravel >= 5.6
+- Laravel >= 5.5
 
 ## Installation
 
