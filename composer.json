@@ -1,9 +1,11 @@
 {
     "name": "riesjart/laravel-database-helpers",
-    "description": "Laravel database helper functions",
+    "description": "Collection of useful Laravel database helper functions",
     "keywords": [
         "connection",
         "database",
+        "function",
+        "functions",
         "helper",
         "helpers",
         "illuminate",
