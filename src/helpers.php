@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Container\Container;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Events\QueryExecuted;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\VarDumper\VarDumper;
 
 if ( ! function_exists('mysql_version')) {
@@ -38,9 +39,7 @@ if ( ! function_exists('normalize_connection')) {
     {
         if ( ! $connection instanceof Connection) {
 
-            $connection = Container::getInstance()
-                ->make('db')
-                ->connection($connection);
+            $connection = DB::connection($connection);
         }
 
         return $connection;
@@ -101,9 +100,7 @@ if ( ! function_exists('query_log')) {
     {
         query_listen(function ($query, $time): void {
 
-            $log = Container::getInstance()->make('log');
-
-            $log->debug('SQL query', compact('query', 'time'));
+            Log::debug('SQL query', compact('query', 'time'));
 
         }, $connection);
     }
