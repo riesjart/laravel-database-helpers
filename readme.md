@@ -14,7 +14,7 @@ This repository uses [Semantic Versioning (SemVer) v2.0.0](http://semver.org/spe
 Pull this package in through Composer.
 
 ```
-composer require riesjart/laravel-helpers "^0.1"
+composer require riesjart/laravel-database-helpers "^0.1"
 ```
 
 There is no service provider that needs to be registered in your Laravel application.
