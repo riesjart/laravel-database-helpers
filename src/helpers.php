@@ -66,7 +66,7 @@ if ( ! function_exists('query_dump')) {
 if ( ! function_exists('query_listen')) {
 
     /**
-     * @param Closure $callback
+     * @param Closure                $callback
      * @param Connection|string|null $connection
      *
      * @return void
