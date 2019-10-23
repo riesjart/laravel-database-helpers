@@ -10,8 +10,6 @@ if ( ! function_exists('mysql_version')) {
 
     /**
      * @param Connection|string|null $connection
-     *
-     * @return string|null
      */
     function mysql_version($connection = null): ? string
     {
@@ -32,8 +30,6 @@ if ( ! function_exists('normalize_connection')) {
 
     /**
      * @param Connection|string|null $connection
-     *
-     * @return Connection
      */
     function normalize_connection($connection = null): Connection
     {
@@ -50,8 +46,6 @@ if ( ! function_exists('query_dump')) {
 
     /**
      * @param Connection|string|null $connection
-     *
-     * @return void
      */
     function query_dump($connection = null): void
     {
@@ -66,10 +60,7 @@ if ( ! function_exists('query_dump')) {
 if ( ! function_exists('query_listen')) {
 
     /**
-     * @param Closure                $callback
      * @param Connection|string|null $connection
-     *
-     * @return void
      */
     function query_listen(Closure $callback, $connection = null): void
     {
@@ -93,8 +84,6 @@ if ( ! function_exists('query_log')) {
 
     /**
      * @param Connection|string|null $connection
-     *
-     * @return void
      */
     function query_log($connection = null): void
     {
